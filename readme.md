@@ -4,7 +4,10 @@ Para rodar, basta clonar este projeto e rodar um `docker compose up` :)
 
 Se preferir, pode também rodar via Kubernetes (k8s) com Kind:
 
-`kind create cluster`
+Criação do cluster via Kind
+```sh
+kind create cluster
+```
 
 Backend:
 ```sh
