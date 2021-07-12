@@ -4,6 +4,13 @@ RUN apk add --no-cache bash
 
 RUN npm install -g @nestjs/cli@7.6.0
 
-USER node
+WORKDIR /usr/src/app
 
-WORKDIR /home/node/app
+COPY . .
+
+RUN npm install
+RUN npm run build
+
+EXPOSE 3000
+
+CMD npm run start:dev
