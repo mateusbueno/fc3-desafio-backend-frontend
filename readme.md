@@ -7,8 +7,6 @@ Se preferir, pode também rodar via Kubernetes (k8s) com Kind:
 `kind create cluster`
 
 Backend:
-
-- API
 ```sh
 kubectl apply -f k8s/backend-deployment.yaml &&\
 kubectl apply -f k8s/backend-service.yaml &&\
